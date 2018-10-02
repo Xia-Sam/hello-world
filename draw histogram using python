@@ -1,0 +1,49 @@
+while True:
+    quar1_str = input("Pls input the value of quarter 1: ")
+    try:
+        quar1_int = int(quar1_str)
+        break
+    except:
+        print("Your input is invalid. Try again.")
+while True:
+    quar2_str = input("Pls input the value of quarter 2: ")
+    try:
+        quar2_int = int(quar2_str)
+        break
+    except:
+        print("Your input is invalid. Try again.")
+while True:
+    quar3_str = input("Pls input the value of quarter 3: ")
+    try:
+        quar3_int = int(quar3_str)
+        break
+    except:
+        print("Your input is invalid. Try again.")
+while True:
+    quar4_str = input("Pls input the value of quarter 4: ")
+    try:
+        quar4_int = int(quar4_str)
+        break
+    except:
+        print("Your input is invalid. Try again.")
+print("Your histogram is shown below. ")
+
+print("quarter 1   ",end='')
+for j in range(0,int(quar1_int/10000)):
+    print("#",end="")
+print("  "+quar1_str)
+
+print("quarter 2   ",end='')
+for j in range(0,int(quar2_int/10000)):
+    print("#",end="")
+print("  "+quar2_str)
+
+print("quarter 3   ",end='')
+for j in range(0,int(quar3_int/10000)):
+    print("#",end="")
+print("  "+quar3_str)
+
+print("quarter 4   ",end='')
+for j in range(0,int(quar4_int/10000)):
+    print("#",end="")
+print("  "+quar4_str)
